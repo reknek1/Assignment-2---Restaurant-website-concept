@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #f9c842;
+  }
+  .header .logo {
+    font-weight: 700;
+  }
+  .header .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+  }
+  .header .contact {
+    font-size: 14px;
+  }
+  
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    background: #f9c842;
+    background-image: url(pictures/burgertop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .top h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+  .top h1 span {
+    color: #a52a2a;
+  }
+  .top .price {
+    background: red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  .featured {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+  .featured .card {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 250px;
+  }
+  .featured img {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  .featured .cardBestBurger img {
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  .menu {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;      
+    gap: 20px;            
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .menu-card {
+    flex: 1 1 200px;      
+    max-width: 30%;     
+    text-align: center;
+  }
+  .menu-card img {
+    width: 100%;          
+    aspect-ratio: 1 / 1;  
+    object-fit: cover;    
+  }
+  .menu-card button {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .events {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  .events img {
+    width: 300px;
+  }
+  
+  .reservation {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .reservation form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .reservation input, .reservation button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .reservation button {
+    grid-column: span 2;
+    background: red;
+    color: #fff;
+    border: none;
+  }
+  
+  footer {
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+  }
+  
+.events {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.events-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.events-text h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.events-text h2 span {
+  color: #a52a2a;
+}
+
+.events-text p {
+  font-size: 16px;
+  color: #666;
+}
+
+.events-image {
+  flex: 1;
+}
+
+.events-image img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.reservation {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.reservation h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.reservation h2 span {
+  color: #a52a2a;
+}
+
+.reservation form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reservation input, .reservation button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation button {
+  grid-column: span 2;
+  background: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+footer {
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+.footer-info, .footer-contact, .footer-social {
+  flex: 1;
+}
+
+.footer-info h3 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.footer-info p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+
+@media (max-width: 768px) {
+  .events {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .events-text {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .events-image img {
+    max-width: 100%;
+  }
+
+  .reservation form {
+    grid-template-columns: 1fr; 
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info, .footer-contact, .footer-social {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-text h2 {
+    font-size: 28px;
+  }
+
+  .reservation h2 {
+    font-size: 28px;
+  }
+
+  .reservation input, .reservation button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
